@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Blog rekomendasi dan spesifikasi gadget dan barang lainya"
+    />
+    <title>My Gadget id</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="icon" type="image/x-icon" href="/img/mylogo.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="src/output.css" />
+    <link rel="stylesheet" href="src/style.css" />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-200">
+    <!-- Navbar -->
+    <header class="fixed right-0 top-0 left-0 z-30">
+      <nav class="bg-gradient-to-r from-orange-500 to-orange-400 shadow-2xl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex justify-between h-16 items-center">
+            <!-- Left: Logo + Brand -->
+            <div class="flex items-center space-x-2">
+              <h1
+                onclick="location.href='#home'"
+                class="text-2xl font-bold text-white cursor-pointer"
+              >
+                My Gadget ID
+              </h1>
+            </div>
+
+            <!-- Center: Links -->
+            <div class="hidden md:flex space-x-6">
+              <a
+                href="#populer"
+                class="text-white hover:text-blue-500 font-medium"
+                >Populer</a
+              >
+              <a
+                href="#product"
+                class="text-white hover:text-blue-500 font-medium"
+                >Product</a
+              >
+              <a
+                href="#about"
+                class="text-white hover:text-blue-500 font-medium"
+                >About</a
+              >
+              <a
+                href="#contact"
+                class="text-white hover:text-blue-500 font-medium"
+                >Contact</a
+              >
+            </div>
+
+            <!-- Right: Search Icon + Mobile menu -->
+            <div class="flex items-center space-x-4">
+              <!-- Mobile menu button -->
+              <div class="md:hidden">
+                <button
+                  id="menu-btn"
+                  class="text-white focus:outline-none hover:text-gray-600"
+                >
+                  <i data-feather="align-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div
+          id="mobile-menu"
+          class="hidden md:hidden px-4 pb-4 transition-all duration-500 ease-in-out translate-y-2"
+        >
+          <a href="#populer" class="block py-2 text-white hover:text-blue-500"
+            >Populer</a
+          >
+          <a href="#product" class="block py-2 text-white hover:text-blue-500"
+            >Product</a
+          >
+          <a href="#about" class="block py-2 text-white hover:text-blue-500"
+            >About</a
+          >
+          <a href="#contact" class="block py-2 text-white hover:text-blue-500"
+            >Contact</a
+          >
+        </div>
+      </nav>
+    </header>
+    <!-- Navbar END -->
+
+    <!-- Hero Section / Welcome -->
+
+    <main>
+      <!-- landing page -->
+      <section>
+        <div
+          class="h-screen w-full flex pt-44 md:pt-0 justify-center md:items-center px-7"
+        >
+          <div class="flex flex-col">
+            <h1 id="home" class="text-3xl font-bold text-center md:text-5xl">
+              Selamat Datang Di
+              <span class="text-orange-500 underline">My Gadget ID </span>
+            </h1>
+            <p class="font-thin text-center text-sm md:text-lg md: mt-2">
+              Rekomendasi , Detail Spesifikasi Dan Product Populer
+            </p>
+            <button
+              onclick="location.href='#product'"
+              class="mt-7 w-32 px-1 py-2 md:w-36 bg-orange-400 mx-auto rounded-md font-medium text-sm md:text-lg hover:scale-105 shadow-md text-white"
+            >
+              Lihat Product
+            </button>
+          </div>
+        </div>
+      </section>
+      <!--Populer  -->
+      <section id="populer">
+        <div class="select-none">
+          <h1
+            class="text-center font-bold md:text-3xl text-[18px] text-orange-500"
+          >
+            POPULER
+          </h1>
+          <div
+            id="scp"
+            class="h-72 px-5 mt-5 md:mt-7 flex space-x-4 overflow-x-auto scrollbar-hide"
+          >
+            <!-- Populer 1 -->
+            <div class="flex-none">
+              <div
+                class="card shadow-lg p-3 w-40 h-52 md:w-52 md:h-64 flex flex-col items-center bg-white rounded-md cursor-pointer"
+              >
+                <img
+                  src="/img/iphone14promax.jpg"
+                  alt="iphone 14 pro max"
+                  width="110"
+                  class="rounded-md md:mb-6 md:mt-3"
+                />
+                <h3 class="md:text-lg">Iphone 14 Pro Max</h3>
+                <p class="text-sm font-light md:font-normal">Rp 21.999.000.</p>
+                <button
+                  class="text-[10px] bg-orange-500 text-sm px-2 mt-2 rounded-sm text-white shadow-md md:text-[10px] md:px-2 md:py-1 md:mt-3 md:font-medium hover:bg-orange-400 hover:scale-105"
+                >
+                  lihat detail
+                </button>
+              </div>
+            </div>
+
+            <!-- Populer 2 -->
+            <div class="flex-none">
+              <div
+                class="card shadow-lg p-3 w-40 h-52 md:w-52 md:h-64 flex flex-col items-center bg-white rounded-md cursor-pointer"
+              >
+                <img
+                  src="/img/Galaxy-S25-Ultra-titanium-silver-blue_.webp"
+                  alt="samsung galaxy s25 ultra"
+                  width="100"
+                  class="rounded-md mt-1 mb-2 md:mt-4 md:mb-7"
+                />
+                <h3 class="md:text-lg">Galaxy S25 Ultra</h3>
+                <p class="text-sm font-light md:font-normal">Rp 22.999.000.</p>
+                <button
+                  class="text-[10px] bg-orange-500 text-sm px-2 mt-2 rounded-sm text-white shadow-md md:text-[10px] md:px-2 md:py-1 md:mt-3 md:font-medium hover:bg-orange-400 hover:scale-105"
+                >
+                  lihat detail
+                </button>
+              </div>
+            </div>
+            <!-- populer 3 -->
+            <div class="flex-none">
+              <div
+                class="card shadow-lg p-3 w-40 h-52 md:w-52 md:h-64 flex flex-col items-center bg-white rounded-md cursor-pointer"
+              >
+                <img
+                  src="/img/xiomi14pro.png"
+                  alt="xiomi 14 pro"
+                  width="110"
+                  class="rounded-md md:mt-1 md:mb-7"
+                />
+                <h3 class="md:text-lg">Xiomi 14 Pro</h3>
+                <p class="text-sm font-light md:font-normal">Rp 11.999.000.</p>
+                <button
+                  class="text-[10px] bg-orange-500 text-sm px-2 mt-2 rounded-sm text-white shadow-md md:text-[10px] md:px-2 md:py-1 md:mt-3 md:font-medium hover:bg-orange-400 hover:scale-105"
+                >
+                  lihat detail
+                </button>
+              </div>
+            </div>
+            <!-- populer 4-->
+            <div class="flex-none">
+              <div
+                class="card shadow-lg p-3 w-40 h-52 md:w-52 md:h-64 flex flex-col items-center bg-white rounded-md cursor-pointer"
+              >
+                <img
+                  src="/img/oppo.jpeg"
+                  alt="find n3 fold"
+                  width="100"
+                  class="rounded-md mt-1 mb-2 md:mt-3 md:mb-7"
+                />
+                <h3 class="md:text-lg">Find N3 Fold</h3>
+                <p class="text-sm font-light md:font-normal">Rp 15.600.000.</p>
+                <button
+                  class="text-[10px] bg-orange-500 text-sm px-2 mt-2 rounded-sm text-white shadow-md md:text-[10px] md:px-2 md:py-1 md:mt-3 md:font-medium hover:bg-orange-400 hover:scale-105"
+                >
+                  lihat detail
+                </button>
+              </div>
+            </div>
+            <!-- populer 5 -->
+            <div class="flex-none">
+              <div
+                class="card shadow-lg p-3 w-40 h-52 md:w-52 md:h-64 flex flex-col items-center bg-white rounded-md cursor-pointer"
+              >
+                <img
+                  src="/img/huawei m.png"
+                  alt="huawei mate x6"
+                  width="110"
+                  class="rounded-md md:mt-1 md:mb-7"
+                />
+                <h3 class="md:text-lg">Huawei Mate X6</h3>
+                <p class="text-sm font-light md:font-normal">Rp 23.700.000.</p>
+                <button
+                  class="text-[10px] bg-orange-500 text-sm px-2 mt-2 rounded-sm text-white shadow-md md:text-[10px] md:px-2 md:py-1 md:mt-3 md:font-medium hover:bg-orange-400 hover:scale-105"
+                >
+                  lihat detail
+                </button>
+              </div>
+            </div>
+            <!-- populer 6 -->
+            <div class="flex-none">
+              <div
+                class="card shadow-lg p-3 w-40 h-52 md:w-52 md:h-64 flex flex-col items-center bg-white rounded-md cursor-pointer"
+              >
+                <img
+                  src="/img/realme-gt-6-thumbnail.jpeg"
+                  alt="realme gt6"
+                  width="110"
+                  class="rounded-md md:mb-8"
+                />
+                <h3 class="md:text-lg">Realme GT6</h3>
+                <p class="text-sm font-light md:font-normal">Rp 7.999.000.</p>
+                <button
+                  class="text-[10px] bg-orange-500 text-sm px-2 mt-2 rounded-sm text-white shadow-md md:text-[10px] md:px-2 md:py-1 md:mt-3 md:font-medium hover:bg-orange-400 hover:scale-105"
+                >
+                  lihat detail
+                </button>
+              </div>
+            </div>
+            <!-- populer 7 -->
+            <div class="flex-none">
+              <div
+                class="card shadow-lg p-3 w-40 h-52 md:w-52 md:h-64 flex flex-col items-center bg-white rounded-md cursor-pointer"
+              >
+                <img
+                  src="/img/rog8pro.jpeg"
+                  alt="asus rog 8 pro"
+                  width="110"
+                  class="rounded-md md:mb-8"
+                />
+                <h3 class="md:text-lg">Asus ROG 8 Pro</h3>
+                <p class="text-sm font-light md:font-normal">Rp 14.999.000.</p>
+                <button
+                  class="text-[10px] bg-orange-500 text-sm px-2 mt-2 rounded-sm text-white shadow-md md:text-[10px] md:px-2 md:py-1 md:mt-3 md:font-medium hover:bg-orange-400 hover:scale-105"
+                >
+                  lihat detail
+                </button>
+              </div>
+            </div>
+            <!-- populer 8 -->
+            <div class="flex-none">
+              <div
+                class="card shadow-lg p-3 w-40 h-52 md:w-52 md:h-64 flex flex-col items-center bg-white rounded-md cursor-pointer"
+              >
+                <img
+                  src="/img/Lenovo-Legion-Y70_.webp"
+                  alt="lenovo legion y70"
+                  width="110"
+                  class="rounded-md md:mb-8"
+                />
+                <h3 class="md:text-lg">Lenovo Legion Y70</h3>
+                <p class="text-sm font-light md:font-normal">Rp 9.450.000.</p>
+                <button
+                  class="text-[10px] bg-orange-500 text-sm px-2 mt-2 rounded-sm text-white shadow-md md:text-[10px] md:px-2 md:py-1 md:mt-3 md:font-medium hover:bg-orange-400 hover:scale-105"
+                >
+                  lihat detail
+                </button>
+              </div>
+            </div>
+            <!-- product 9 -->
+            <div class="flex-none">
+              <div
+                class="card shadow-lg p-3 w-40 h-52 md:w-52 md:h-64 flex flex-col items-center bg-white rounded-md cursor-pointer"
+              >
+                <img
+                  src="/img/OnePlus-13T_.webp"
+                  alt="oneplus 13 t"
+                  width="110"
+                  class="rounded-md md:mb-8"
+                />
+                <h3 class="md:text-lg">One Plus 13T</h3>
+                <p class="text-sm font-light md:font-normal">Rp 9.490.000.</p>
+                <button
+                  class="text-[10px] bg-orange-500 text-sm px-2 mt-2 rounded-sm text-white shadow-md md:text-[10px] md:px-2 md:py-1 md:mt-3 md:font-medium hover:bg-orange-400 hover:scale-105"
+                >
+                  lihat detail
+                </button>
+              </div>
+            </div>
+            <!-- product 10 -->
+            <div class="flex-none">
+              <div
+                class="card shadow-lg p-3 w-40 h-52 md:w-52 md:h-64 flex flex-col items-center bg-white rounded-md cursor-pointer"
+              >
+                <img
+                  src="/img/vivo-x100-pro-thumbnail.jpg"
+                  alt="vivo x100 pro"
+                  width="110"
+                  class="rounded-md md:mb-8"
+                />
+                <h3 class="md:text-lg">Vivo X100 pro</h3>
+                <p class="text-sm font-light md:font-normal">Rp 22.999.000.</p>
+                <button
+                  class="text-[10px] bg-orange-500 text-sm px-2 mt-2 rounded-sm text-white shadow-md md:text-[10px] md:px-2 md:py-1 md:mt-3 md:font-medium hover:bg-orange-400 hover:scale-105"
+                >
+                  lihat detail
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- populer end -->
+
+      <!-- all product -->
+      <section>
+        <div class="flex flex-col items-center px-3">
+          <h1
+            id="product"
+            class="md:text-2xl text-[18px] font-bold text-orange-600 text-center mt-7"
+          >
+            ALL PRODUCT
+          </h1>
+          <div
+            class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-3 p-1 py-7 md:gap-6"
+          >
+            <!-- product 1 -->
+            <div
+              class="bg-white shadow-lg h-40 w-36 flex flex-col items-center p-3 rounded-2xl hover:scale-105 cursor-pointer md:h-52 md:w-44"
+            >
+              <p
+                class="text-[12px] md:text-[15px] md:pt-3 text-black font-semibold"
+              >
+                Apple
+              </p>
+              <img
+                src="/img/brand/apple.jpg"
+                alt=""
+                width="100"
+                class="rounded-full md:mt-2"
+              />
+              <a
+                href=""
+                class="text-[12px] md:mt-3 bg-orange-500 px-5 text-white rounded-sm md:py-1 md:px-6 md:text-[14px] hover:bg-orange-400"
+                >visit</a
+              >
+            </div>
+            <!-- produk 2 -->
+            <div
+              class="bg-white shadow-lg h-40 w-36 flex flex-col items-center p-3 rounded-2xl hover:scale-105 cursor-pointer md:h-52 md:w-44"
+            >
+              <p
+                class="text-[12px] md:text-[15px] md:pt-3 text-black font-semibold"
+              >
+                Samsung
+              </p>
+              <img
+                src="/img/brand/samsung.jpg"
+                alt=""
+                width="100"
+                class="rounded-full md:mt-2"
+              />
+              <a
+                href=""
+                class="text-[12px] md:mt-3 bg-orange-500 px-5 text-white rounded-sm md:py-1 md:px-6 md:text-[14px] hover:bg-orange-400"
+                >visit</a
+              >
+            </div>
+            <!-- produk 3 -->
+            <div
+              class="bg-white shadow-lg h-40 w-36 flex flex-col items-center p-3 rounded-2xl hover:scale-105 cursor-pointer md:h-52 md:w-44"
+            >
+              <p
+                class="text-[12px] md:text-[15px] md:pt-3 text-black font-semibold"
+              >
+                Xiomi
+              </p>
+              <img
+                src="/img/brand/xiomi.jpg"
+                alt=""
+                width="83"
+                class="rounded-full m-2 md:mt-2 md:mb-4"
+              />
+              <a
+                href=""
+                class="text-[12px] md:mt-3 bg-orange-500 px-5 text-white rounded-sm md:py-1 md:px-6 md:text-[14px] hover:bg-orange-400"
+                >visit</a
+              >
+            </div>
+            <!-- product 4 -->
+            <div
+              class="bg-white shadow-lg h-40 w-36 flex flex-col items-center p-3 rounded-2xl hover:scale-105 cursor-pointer md:h-52 md:w-44"
+            >
+              <p
+                class="text-[12px] md:text-[15px] md:pt-3 text-black font-semibold"
+              >
+                Oppo
+              </p>
+              <img
+                src="/img/brand/oppo.jpg"
+                alt=""
+                width="100"
+                class="rounded-full md:mt-2"
+              />
+              <a
+                href=""
+                class="text-[12px] md:mt-3 bg-orange-500 px-5 text-white rounded-sm md:py-1 md:px-6 md:text-[14px] hover:bg-orange-400"
+                >visit</a
+              >
+            </div>
+            <!-- product 5 -->
+            <div
+              class="bg-white shadow-lg h-40 w-36 flex flex-col items-center p-3 rounded-2xl hover:scale-105 cursor-pointer md:h-52 md:w-44"
+            >
+              <p
+                class="text-[12px] md:text-[15px] md:pt-3 text-black font-semibold"
+              >
+                Huawei
+              </p>
+              <img
+                src="/img/brand/huawei.jpg"
+                alt=""
+                width="100"
+                class="rounded-full md:mt-2"
+              />
+              <a
+                href=""
+                class="text-[12px] md:mt-3 bg-orange-500 px-5 text-white rounded-sm md:py-1 md:px-6 md:text-[14px] hover:bg-orange-400"
+                >visit</a
+              >
+            </div>
+            <!-- product 7 -->
+            <div
+              class="bg-white shadow-lg h-40 w-36 flex flex-col items-center p-3 rounded-2xl hover:scale-105 cursor-pointer md:h-52 md:w-44"
+            >
+              <p
+                class="text-[12px] md:text-[15px] md:pt-3 text-black font-semibold"
+              >
+                Realme
+              </p>
+              <img
+                src="/img/brand/realme.jpg"
+                alt=""
+                width="83"
+                class="rounded-full my-2 md:mt-2 md:mb-4"
+              />
+              <a
+                href=""
+                class="text-[12px] md:mt-3 bg-orange-500 px-5 text-white rounded-sm md:py-1 md:px-6 md:text-[14px] hover:bg-orange-400"
+                >visit</a
+              >
+            </div>
+            <!-- produk 8 -->
+            <div
+              class="bg-white shadow-lg h-40 w-36 flex flex-col items-center p-3 rounded-2xl hover:scale-105 cursor-pointer md:h-52 md:w-44"
+            >
+              <p
+                class="text-[12px] md:text-[15px] md:pt-3 text-black font-semibold"
+              >
+                Asus
+              </p>
+              <img
+                src="/img/brand/asus.jpg"
+                alt=""
+                width="100"
+                class="rounded-full md:mt-2"
+              />
+              <a
+                href=""
+                class="text-[12px] md:mt-3 bg-orange-500 px-5 text-white rounded-sm md:py-1 md:px-6 md:text-[14px] hover:bg-orange-400"
+                >visit</a
+              >
+            </div>
+            <!-- produk 9 -->
+            <div
+              class="bg-white shadow-lg h-40 w-36 flex flex-col items-center p-3 rounded-2xl hover:scale-105 cursor-pointer md:h-52 md:w-44"
+            >
+              <p
+                class="text-[12px] md:text-[15px] md:pt-3 text-black font-semibold"
+              >
+                Lenovo
+              </p>
+              <img
+                src="/img/brand/lenovo.jpg"
+                alt=""
+                width="100"
+                class="rounded-full md:mt-2"
+              />
+              <a
+                href=""
+                class="text-[12px] md:mt-3 bg-orange-500 px-5 text-white rounded-sm md:py-1 md:px-6 md:text-[14px] hover:bg-orange-400"
+                >visit</a
+              >
+            </div>
+            <!-- product 11 -->
+            <div
+              class="bg-white shadow-lg h-40 w-36 flex flex-col items-center p-3 rounded-2xl hover:scale-105 cursor-pointer md:h-52 md:w-44"
+            >
+              <p
+                class="text-[12px] md:text-[15px] md:pt-3 text-black font-semibold"
+              >
+                One Plus
+              </p>
+              <img
+                src="/img/brand/oneplus.jpg"
+                alt=""
+                width="84"
+                class="rounded-full my-2 md:mt-2 md:mb-4"
+              />
+              <a
+                href=""
+                class="text-[12px] md:mt-3 bg-orange-500 px-5 text-white rounded-sm md:py-1 md:px-6 md:text-[14px] hover:bg-orange-400"
+                >visit</a
+              >
+            </div>
+            <!-- product 12 -->
+            <div
+              class="bg-white shadow-lg h-40 w-36 flex flex-col items-center p-3 rounded-2xl hover:scale-105 cursor-pointer md:h-52 md:w-44"
+            >
+              <p
+                class="text-[12px] md:text-[15px] md:pt-3 text-black font-semibold"
+              >
+                Vivo
+              </p>
+              <img
+                src="/img/brand/vivo.jpg"
+                alt=""
+                width="84"
+                class="rounded-full my-2 md:mt-2 md:mb-4"
+              />
+              <a
+                href=""
+                class="text-[12px] md:mt-3 bg-orange-500 px-5 text-white rounded-sm md:py-1 md:px-6 md:text-[14px] hover:bg-orange-400"
+                >visit</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- all product end-->
+
+      <!-- about -->
+      <section id="about" class="bg-white py-16 mt-20">
+        <div class="max-w-6xl mx-auto px-6">
+          <h3 class="text-3xl font-bold text-center mb-10 text-orange-600">
+            About
+          </h3>
+          <div class="grid md:grid-cols-3 gap-8">
+            <div
+              class="bg-gray-100 p-6 rounded-2xl shadow-sm hover:shadow-md transition hover:scale-105"
+            >
+              <h4 class="text-xl font-semibold mb-3 text-blue-600">
+                Dunia Gadget Terkini
+              </h4>
+              <p class="text-gray-600">
+                Temukan informasi terbaru seputar smartphone, laptop, dan
+                perangkat teknologi lainnya yang sedang populer di pasaran.
+              </p>
+            </div>
+            <div
+              class="bg-gray-100 p-6 rounded-2xl shadow-sm hover:shadow-md transition hover:scale-105"
+            >
+              <h4 class="text-xl font-semibold mb-3 text-blue-600">
+                Review dan Spesifikasi Lengkap
+              </h4>
+              <p class="text-gray-600">
+                Kami menyajikan detail spesifikasi, fitur unggulan, dan performa
+                setiap gadget dengan penjelasan yang mudah dipahami.
+              </p>
+            </div>
+            <div
+              class="bg-gray-100 p-6 rounded-2xl shadow-sm hover:shadow-md transition hover:scale-105"
+            >
+              <h4 class="text-xl font-semibold mb-3 text-blue-600">
+                Rekomendasi Produk Populer
+              </h4>
+              <p class="text-gray-600">
+                Dapatkan referensi gadget terbaik berdasarkan tren terbaru,
+                rating pengguna, dan keunggulan setiap produk.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- about end -->
+      <!-- contact  -->
+      <!-- Contact Form -->
+      <section
+        id="contact"
+        class="flex flex-col items-center py-16 bg-white rounded-2xl shadow-md max-w-3xl mx-auto px-6 mt-24"
+      >
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+          alt="WhatsApp Logo"
+          class="w-20 h-20 mb-6"
+        />
+        <h3 class="text-2xl font-semibold mb-4 text-gray-800 text-center">
+          Chat Langsung via WhatsApp
+        </h3>
+        <p class="text-gray-600 mb-8 text-center max-w-md">
+          Klik tombol di bawah ini untuk mengirim pesan langsung ke WhatsApp
+          kami. Kami siap membantu kamu dengan cepat dan ramah 😄
+        </p>
+
+        <a
+          href="https://wa.me/6285863433655?text=Halo%2C%20saya%20ingin%20bertanya%20tentang%20gadget."
+          target="_blank"
+          class="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-medium px-6 py-3 rounded-full text-lg transition"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M21 11.5A8.38 8.38 0 0112.5 20a8.38 8.38 0 01-3.88-.97l-4.12 1.1 1.1-4.12A8.38 8.38 0 014 11.5 8.5 8.5 0 1112.5 3a8.5 8.5 0 018.5 8.5z"
+            />
+          </svg>
+          Hubungi via WhatsApp
+        </a>
+      </section>
+
+      <!-- contact end -->
+    </main>
+    <!-- footer -->
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 text-gray-300 py-10 mt-20">
+      <div class="max-w-6xl mx-auto px-6">
+        <!-- Logo dan Deskripsi -->
+        <div
+          class="flex flex-col md:flex-row justify-between items-center md:items-start gap-8"
+        >
+          <div class="text-center md:text-left">
+            <h2 class="text-2xl font-bold text-white mb-3">MyGadgetID</h2>
+            <p class="text-gray-400 max-w-md">
+              Sumber informasi terkini seputar spesifikasi gadget, berita
+              teknologi, dan produk populer. Kami hadir untuk membantu kamu
+              memilih gadget terbaik.
+            </p>
+          </div>
+
+          <!-- Sosial Media -->
+          <div class="flex flex-col items-center md:items-end gap-3">
+            <h3 class="text-lg font-semibold text-white">Ikuti Kami</h3>
+            <div class="flex gap-4 mt-2">
+              <a
+                href="https://web.facebook.com/profile.php?id=100069915727301&sk=friends"
+                target="_blank"
+                class="hover:text-blue-500 transition"
+              >
+                <i data-feather="facebook"></i>
+              </a>
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                class="hover:text-sky-400 transition"
+              >
+                <i data-feather="twitter"></i>
+              </a>
+              <a
+                href="https://instagram.com/r4nn______"
+                target="_blank"
+                class="hover:text-pink-500 transition"
+              >
+                <i data-feather="instagram"></i>
+              </a>
+              <a
+                href="https://youtube.com"
+                target="_blank"
+                class="hover:text-red-500 transition"
+              >
+                <i data-feather="youtube"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Garis Pemisah -->
+        <div class="border-t border-gray-700 my-8"></div>
+
+        <!-- Copyright -->
+        <div class="text-center text-gray-500 text-sm">
+          <p>© 2025 GadgetID.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- Hero Section / Welcome END-->
+    <script src="script.js"></script>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
