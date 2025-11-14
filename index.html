@@ -9,7 +9,7 @@
     />
     <title>My Gadget id</title>
     <script src="https://unpkg.com/feather-icons"></script>
-    <link rel="icon" type="image/x-icon" href="/img/mylogo.png" />
+    <link rel="icon" type="image/x-icon" href="img/MY GADGET ID (1).png" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
       rel="stylesheet"
@@ -131,7 +131,7 @@
           <h1
             class="text-center font-bold md:text-3xl text-[18px] text-orange-500"
           >
-            POPULER
+            TERPOPULER
           </h1>
           <div
             id="scp"
@@ -149,8 +149,9 @@
                   class="rounded-md md:mb-6 md:mt-3"
                 />
                 <h3 class="md:text-lg">Iphone 14 Pro Max</h3>
-                <p class="text-sm font-light md:font-normal">Rp 21.999.000.</p>
+                <p class="text-sm font-light md:font-normal">Rp 24.999.000.</p>
                 <button
+                  onclick="location.href='pages/device/iphone14promax.html'"
                   class="text-[10px] bg-orange-500 text-sm px-2 mt-2 rounded-sm text-white shadow-md md:text-[10px] md:px-2 md:py-1 md:mt-3 md:font-medium hover:bg-orange-400 hover:scale-105"
                 >
                   lihat detail
@@ -170,8 +171,9 @@
                   class="rounded-md mt-1 mb-2 md:mt-4 md:mb-7"
                 />
                 <h3 class="md:text-lg">Galaxy S25 Ultra</h3>
-                <p class="text-sm font-light md:font-normal">Rp 22.999.000.</p>
+                <p class="text-sm font-light md:font-normal">Rp 17.950.000</p>
                 <button
+                  onclick="location.href=`/pages/device/galaxys25ultra.html`"
                   class="text-[10px] bg-orange-500 text-sm px-2 mt-2 rounded-sm text-white shadow-md md:text-[10px] md:px-2 md:py-1 md:mt-3 md:font-medium hover:bg-orange-400 hover:scale-105"
                 >
                   lihat detail
@@ -189,9 +191,10 @@
                   width="110"
                   class="rounded-md md:mt-1 md:mb-7"
                 />
-                <h3 class="md:text-lg">Xiomi 14 Pro</h3>
-                <p class="text-sm font-light md:font-normal">Rp 11.999.000.</p>
+                <h3 class="md:text-lg">Xiaomi 14 Pro</h3>
+                <p class="text-sm font-light md:font-normal">Rp 5.899.000.</p>
                 <button
+                  onclick="location.href=`/pages/device/xiaomi14pro.html`"
                   class="text-[10px] bg-orange-500 text-sm px-2 mt-2 rounded-sm text-white shadow-md md:text-[10px] md:px-2 md:py-1 md:mt-3 md:font-medium hover:bg-orange-400 hover:scale-105"
                 >
                   lihat detail
@@ -343,6 +346,91 @@
       </section>
       <!-- populer end -->
 
+      <!-- search produk -->
+      <section id="populer">
+        <div class="select-none">
+          <h1
+            class="text-center font-bold md:text-3xl text-[18px] text-orange-500"
+          >
+            CARI PRODUK
+          </h1>
+
+          <div class="w-full max-w-md mx-auto mt-4">
+            <div class="relative">
+              <input
+                type="text"
+                placeholder="Cari sesuatu..."
+                class="w-full pl-12 pr-4 py-3 rounded-2xl shadow-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition bg-white placeholder-orange-400"
+              />
+              <svg
+                class="w-5 h-5 text-orange-500 absolute left-4 top-1/2 -translate-y-1/2"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1010.5 18a7.5 7.5 0 006.15-3.35z"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <div
+            id="scp"
+            class="h-72 px-5 mt-5 md:mt-7 flex space-x-4 overflow-x-auto scrollbar-hide"
+          >
+            <!-- Populer 1 -->
+            <div class="flex-none">
+              <div
+                class="card shadow-lg p-3 w-40 h-52 md:w-52 md:h-64 flex flex-col items-center bg-white rounded-md cursor-pointer"
+              >
+                <img
+                  src="img/iphone14promax.jpg"
+                  alt="iphone 14 pro max"
+                  width="110"
+                  class="rounded-md md:mb-6 md:mt-3"
+                />
+                <h3 class="md:text-lg">Iphone 14 Pro Max</h3>
+                <p class="text-sm font-light md:font-normal">Rp 24.999.000.</p>
+                <button
+                  onclick="location.href='pages/device/iphone14promax.html'"
+                  class="text-[10px] bg-orange-500 text-sm px-2 mt-2 rounded-sm text-white shadow-md md:text-[10px] md:px-2 md:py-1 md:mt-3 md:font-medium hover:bg-orange-400 hover:scale-105"
+                >
+                  lihat detail
+                </button>
+              </div>
+            </div>
+
+            <!-- Populer 2 -->
+            <div class="flex-none">
+              <div
+                class="card shadow-lg p-3 w-40 h-52 md:w-52 md:h-64 flex flex-col items-center bg-white rounded-md cursor-pointer"
+              >
+                <img
+                  src="img/Galaxy-S25-Ultra-titanium-silver-blue_.webp"
+                  alt="samsung galaxy s25 ultra"
+                  width="100"
+                  class="rounded-md mt-1 mb-2 md:mt-4 md:mb-7"
+                />
+                <h3 class="md:text-lg">Galaxy S25 Ultra</h3>
+                <p class="text-sm font-light md:font-normal">Rp 17.950.000</p>
+                <button
+                  onclick="location.href=`/pages/device/galaxys25ultra.html`"
+                  class="text-[10px] bg-orange-500 text-sm px-2 mt-2 rounded-sm text-white shadow-md md:text-[10px] md:px-2 md:py-1 md:mt-3 md:font-medium hover:bg-orange-400 hover:scale-105"
+                >
+                  lihat detail
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- search produk end -->
+
       <!-- all product -->
       <section>
         <div class="flex flex-col items-center px-3">
@@ -350,7 +438,7 @@
             id="product"
             class="md:text-2xl text-[18px] font-bold text-orange-600 text-center mt-7"
           >
-            ALL PRODUCT
+            SEMUA PRODUK
           </h1>
           <div
             class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-3 p-1 py-7 md:gap-6"
@@ -366,14 +454,14 @@
               </p>
               <img
                 src="img/brand/apple.jpg"
-                alt=""
+                alt="logo apple"
                 width="100"
                 class="rounded-full md:mt-2"
               />
               <a
-                href=""
+                href="pages/apple.html"
                 class="text-[12px] md:mt-3 bg-orange-500 px-5 text-white rounded-sm md:py-1 md:px-6 md:text-[14px] hover:bg-orange-400"
-                >visit</a
+                >Lihat</a
               >
             </div>
             <!-- produk 2 -->
@@ -387,14 +475,14 @@
               </p>
               <img
                 src="img/brand/samsung.jpg"
-                alt=""
+                alt="logo samsung"
                 width="100"
                 class="rounded-full md:mt-2"
               />
               <a
-                href=""
+                href="pages/samsung.html"
                 class="text-[12px] md:mt-3 bg-orange-500 px-5 text-white rounded-sm md:py-1 md:px-6 md:text-[14px] hover:bg-orange-400"
-                >visit</a
+                >Lihat</a
               >
             </div>
             <!-- produk 3 -->
@@ -404,18 +492,18 @@
               <p
                 class="text-[12px] md:text-[15px] md:pt-3 text-black font-semibold"
               >
-                Xiomi
+                Xiaomi
               </p>
               <img
                 src="img/brand/xiomi.jpg"
-                alt=""
+                alt="logo xiaomi"
                 width="83"
                 class="rounded-full m-2 md:mt-2 md:mb-4"
               />
               <a
-                href=""
+                href="pages/xiomi.html"
                 class="text-[12px] md:mt-3 bg-orange-500 px-5 text-white rounded-sm md:py-1 md:px-6 md:text-[14px] hover:bg-orange-400"
-                >visit</a
+                >Lihat</a
               >
             </div>
             <!-- product 4 -->
@@ -429,14 +517,14 @@
               </p>
               <img
                 src="img/brand/oppo.jpg"
-                alt=""
+                alt="logo oppo"
                 width="100"
                 class="rounded-full md:mt-2"
               />
               <a
-                href=""
+                href="pages/oppo.html"
                 class="text-[12px] md:mt-3 bg-orange-500 px-5 text-white rounded-sm md:py-1 md:px-6 md:text-[14px] hover:bg-orange-400"
-                >visit</a
+                >Lihat</a
               >
             </div>
             <!-- product 5 -->
@@ -450,14 +538,14 @@
               </p>
               <img
                 src="img/brand/huawei.jpg"
-                alt=""
+                alt="logo huawei"
                 width="100"
                 class="rounded-full md:mt-2"
               />
               <a
-                href=""
+                href="pages/huawei.html"
                 class="text-[12px] md:mt-3 bg-orange-500 px-5 text-white rounded-sm md:py-1 md:px-6 md:text-[14px] hover:bg-orange-400"
-                >visit</a
+                >Lihat</a
               >
             </div>
             <!-- product 7 -->
@@ -471,14 +559,14 @@
               </p>
               <img
                 src="img/brand/realme.jpg"
-                alt=""
+                alt="logo realme"
                 width="83"
                 class="rounded-full my-2 md:mt-2 md:mb-4"
               />
               <a
-                href=""
+                href="pages/realme.html"
                 class="text-[12px] md:mt-3 bg-orange-500 px-5 text-white rounded-sm md:py-1 md:px-6 md:text-[14px] hover:bg-orange-400"
-                >visit</a
+                >Lihat</a
               >
             </div>
             <!-- produk 8 -->
@@ -492,14 +580,14 @@
               </p>
               <img
                 src="img/brand/asus.jpg"
-                alt=""
+                alt="logo asus"
                 width="100"
                 class="rounded-full md:mt-2"
               />
               <a
-                href=""
+                href="pages/asus.html"
                 class="text-[12px] md:mt-3 bg-orange-500 px-5 text-white rounded-sm md:py-1 md:px-6 md:text-[14px] hover:bg-orange-400"
-                >visit</a
+                >Lihat</a
               >
             </div>
             <!-- produk 9 -->
@@ -513,14 +601,14 @@
               </p>
               <img
                 src="img/brand/lenovo.jpg"
-                alt=""
+                alt="logo lenovo"
                 width="100"
                 class="rounded-full md:mt-2"
               />
               <a
-                href=""
+                href="pages/lenovo.html"
                 class="text-[12px] md:mt-3 bg-orange-500 px-5 text-white rounded-sm md:py-1 md:px-6 md:text-[14px] hover:bg-orange-400"
-                >visit</a
+                >Lihat</a
               >
             </div>
             <!-- product 11 -->
@@ -534,14 +622,14 @@
               </p>
               <img
                 src="img/brand/oneplus.jpg"
-                alt=""
+                alt="logo oneplus"
                 width="84"
                 class="rounded-full my-2 md:mt-2 md:mb-4"
               />
               <a
-                href=""
+                href="pages/oneplus.html"
                 class="text-[12px] md:mt-3 bg-orange-500 px-5 text-white rounded-sm md:py-1 md:px-6 md:text-[14px] hover:bg-orange-400"
-                >visit</a
+                >Lihat</a
               >
             </div>
             <!-- product 12 -->
@@ -555,19 +643,20 @@
               </p>
               <img
                 src="img/brand/vivo.jpg"
-                alt=""
+                alt="logo vivo"
                 width="84"
                 class="rounded-full my-2 md:mt-2 md:mb-4"
               />
               <a
-                href=""
+                href="pages/vivo.html"
                 class="text-[12px] md:mt-3 bg-orange-500 px-5 text-white rounded-sm md:py-1 md:px-6 md:text-[14px] hover:bg-orange-400"
-                >visit</a
+                >Lihat</a
               >
             </div>
           </div>
         </div>
       </section>
+
       <!-- all product end-->
 
       <!-- about -->
@@ -614,6 +703,18 @@
         </div>
       </section>
       <!-- about end -->
+      <!-- privacy-polycy  -->
+
+      <section id="privacy-policy" class="flex items-center">
+        <div class="py-10 flex mx-auto mt-auto">
+          <button
+            class="md:px-8 md:py-4 px-4 py-2 bg-orange-500 rounded-md shadow-lg text-white font-medium hover:scale-105 mt-12"
+          >
+            <a href="privacy-policy.html">Privacy Policy</a>
+          </button>
+        </div>
+      </section>
+      <!-- privacy-polycy end -->
       <!-- contact  -->
       <!-- Contact Form -->
       <section
